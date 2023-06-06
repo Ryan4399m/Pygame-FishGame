@@ -339,7 +339,7 @@ def main ():
                 final_op = pygame.transform.scale(small_op, (SCREEN_WIDTH // 10*f1, SCREEN_HEIGHT // 5.6*f1))
                 f_x = random.randint(-1000, 4000)
                 f_y = random.randint(-500, 2000)
-        
+       
         if totalscore > 45:
             op2_speed = 25
             health_speed = 4
