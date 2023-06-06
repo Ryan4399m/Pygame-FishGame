@@ -265,10 +265,10 @@ def main ():
             
         if totalscore > 15:
             op2_speed = 22
-            health_speed = 3
-            op_speed = 3
-            chili_speed = 3
-            player_speed = 3
+            health_speed = 2.5
+            op_speed = 2.5
+            chili_speed = 2.5
+            player_speed = 2.5
         
             op3_x, op3_y = update_position(op3_x, op3_y, op2_speed, "right")
             op3_rect = moving_opl.get_rect(center=(op3_x - bg_x[7], op3_y - bg_y[7]))
@@ -298,10 +298,10 @@ def main ():
 
         if totalscore > 25:
             op2_speed = 25
-            health_speed = 4
-            op_speed = 4
-            chili_speed = 4
-            player_speed = 4
+            health_speed = 3
+            op_speed = 3
+            chili_speed = 3
+            player_speed = 3
         
             op5_x, op5_y = update_position(op5_x, op5_y, op2_speed, "up")
             op5_rect = moving_opu.get_rect(center=(op5_x - bg_x[7], op5_y - bg_y[7]))
@@ -340,6 +340,12 @@ def main ():
                 f_x = random.randint(-1000, 4000)
                 f_y = random.randint(-500, 2000)
         
+        if totalscore > 45:
+            op2_speed = 25
+            health_speed = 4
+            op_speed = 4
+            chili_speed = 4
+            player_speed = 4
 
         if player_hitbox.colliderect(chili_rect):
             chili_x = random.randint(200, 2700)
