@@ -122,7 +122,7 @@ def main ():
     level = 0
     levelchange = False
     mixer.music.load('Assets/aquagrabber.mp3')
-    mixer.music.set_volume(0.5)
+    mixer.music.set_volume(0.9)
     mixer.music.play(-1)
 
     while True:
@@ -264,7 +264,7 @@ def main ():
                 op2_y = random.randint(-500, 2000)
             
         if totalscore > 15:
-            op2_speed = 25
+            op2_speed = 22
             health_speed = 3
             op_speed = 3
             chili_speed = 3
@@ -297,7 +297,7 @@ def main ():
                 op4_y = -1000
 
         if totalscore > 25:
-            op2_speed = 28
+            op2_speed = 25
             health_speed = 4
             op_speed = 4
             chili_speed = 4
